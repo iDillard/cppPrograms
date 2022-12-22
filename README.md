@@ -1,2 +1,7 @@
 # cppPrograms
-This repository holds files for all my C++ work
+This repository holds all my work associated with C++
+
+- Structs
+- Object Oriented Programming
+- Using header files
+- Reading from files
