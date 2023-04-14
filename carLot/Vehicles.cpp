@@ -1,12 +1,11 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include "Vehicle.h"
+#include "Vehicles.h"
 
 using namespace std;
 
 // Constructors
-
 Vehicle::Vehicle()
 {
     // Constructor for values not being passed in
@@ -17,13 +16,45 @@ Vehicle::Vehicle()
     mileage = 0.0;
 }
 
-Vehicle::Vehicle(string vMake, string vModel, int vYear, double vMileage)
+Vehicle::Vehicle(string vMake, string vModel, string vColor, int vYear, double vMileage)
 {
     // Construction for passed values
+    setVehicleMake(vMake);
+    setVehicleModel(vModel);
+    setVehicleYear(vYear);
+    setVehicleColor(vColor);
+}
+
+// setters
+
+void Vehicle::setVehicleMileage(double vMilaege)
+{
+
+    mileage = vMilaege;
+}
+
+void Vehicle::setVehicleMake(string vMake)
+{
+
     make = vMake;
+}
+
+void Vehicle::setVehicleModel(string vModel)
+{
+
     model = vModel;
+}
+
+void Vehicle::setVehicleYear(double vYear)
+{
+
     year = vYear;
-    mileage = vMileage;
+}
+
+void Vehicle::setVehicleColor(string vColor)
+{
+
+    color = vColor;
 }
 
 // accessors
@@ -50,3 +81,4 @@ string Vehicle::getVehicleColor()
 
     return color; // return color
 }
+
